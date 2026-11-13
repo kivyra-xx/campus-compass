@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title description">
+  <title id="title">Kivyra Ivy profile illustration</title>
+  <desc id="description">A friendly illustrated portrait of a young woman with natural curly hair.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b8eee2"/>
+      <stop offset="1" stop-color="#d8e9ff"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="0" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#178c82"/>
+      <stop offset="1" stop-color="#12645f"/>
+    </linearGradient>
+    <clipPath id="portrait">
+      <circle cx="256" cy="256" r="256"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#portrait)">
+    <path fill="url(#background)" d="M0 0h512v512H0z"/>
+    <circle cx="414" cy="100" r="62" fill="#fff" opacity=".3"/>
+    <path fill="#f3b39a" d="M70 512c12-91 74-145 157-153h58c83 8 145 62 157 153z"/>
+    <path fill="url(#shirt)" d="M102 512c12-77 65-130 133-143l21 32 22-32c68 13 121 66 133 143z"/>
+    <path fill="#a95435" d="M213 321h86v91c-9 18-21 27-43 27s-34-9-43-27z"/>
+    <path fill="#301b1b" d="M149 222c-25-91 23-162 107-162 77 0 118 55 112 143l-9 81H153z"/>
+    <circle cx="158" cy="240" r="28" fill="#a95435"/>
+    <circle cx="354" cy="240" r="28" fill="#a95435"/>
+    <path fill="#c97754" d="M160 199c0-72 41-119 96-119s96 47 96 119v65c0 77-47 126-96 126s-96-49-96-126z"/>
+    <path fill="#301b1b" d="M154 213c-9-85 28-153 105-153 63 0 109 40 112 118-24-9-48-28-63-51-28 39-82 61-154 61z"/>
+    <path fill="#301b1b" d="M161 132c-30 12-45 41-42 76l9 54 19-16zM351 124c34 17 49 48 46 84l-9 54-19-16z"/>
+    <g fill="#301b1b">
+      <circle cx="145" cy="125" r="30"/><circle cx="171" cy="88" r="31"/>
+      <circle cx="211" cy="67" r="31"/><circle cx="253" cy="63" r="33"/>
+      <circle cx="296" cy="70" r="32"/><circle cx="332" cy="94" r="31"/>
+      <circle cx="357" cy="130" r="30"/>
+    </g>
+    <path fill="none" stroke="#432224" stroke-linecap="round" stroke-width="8" d="M195 225c12-9 25-9 37 0m47 0c12-9 25-9 37 0"/>
+    <ellipse cx="214" cy="244" rx="6" ry="8" fill="#24191b"/>
+    <ellipse cx="298" cy="244" rx="6" ry="8" fill="#24191b"/>
+    <path fill="none" stroke="#9d4e3e" stroke-linecap="round" stroke-width="6" d="M250 252c-3 15-7 26-11 34 8 6 17 6 25 0"/>
+    <path fill="#8f3442" d="M228 307c18-12 38-12 56 0-17 22-39 22-56 0"/>
+    <path fill="none" stroke="#f1a08c" stroke-linecap="round" stroke-width="5" d="M197 273c6 4 12 6 18 7m82 0c6-1 12-3 18-7"/>
+    <circle cx="151" cy="277" r="8" fill="#e9b64e"/>
+    <circle cx="361" cy="277" r="8" fill="#e9b64e"/>
+  </g>
+</svg>

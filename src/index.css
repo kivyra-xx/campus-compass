@@ -1,0 +1,167 @@
+@import 'tailwindcss';
+
+:root {
+  font-family: Inter, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #0f172a;
+  background: #f8fafc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+@keyframes hand-wave {
+  0%,
+  60%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  10%,
+  30% {
+    transform: rotate(16deg);
+  }
+
+  20%,
+  40% {
+    transform: rotate(-8deg);
+  }
+
+  50% {
+    transform: rotate(12deg);
+  }
+}
+
+.wave-hand {
+  display: inline-block;
+  transform-origin: 70% 70%;
+  animation: hand-wave 1.8s ease-in-out infinite;
+}
+
+@keyframes notification-ring {
+  0%,
+  88%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  90% {
+    transform: rotate(12deg);
+  }
+
+  92% {
+    transform: rotate(-10deg);
+  }
+
+  94% {
+    transform: rotate(7deg);
+  }
+
+  96% {
+    transform: rotate(-4deg);
+  }
+}
+
+.notification-bell {
+  transform-origin: 50% 20%;
+  animation: notification-ring 3.2s ease-in-out infinite;
+}
+
+@keyframes notification-pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.7;
+    transform: scale(1.25);
+  }
+}
+
+.notification-dot {
+  animation: notification-pulse 1.8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wave-hand,
+  .notification-bell,
+  .notification-dot {
+    animation: none;
+  }
+}
+
+main .rounded-3xl,
+main .rounded-2xl {
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+main .scroll-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 650ms ease,
+    transform 650ms cubic-bezier(0.2, 0.7, 0.2, 1),
+    box-shadow 220ms ease,
+    border-color 220ms ease;
+}
+
+main .scroll-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  main .rounded-3xl:hover,
+  main .rounded-2xl:hover,
+  main .rounded-3xl:focus-within,
+  main .rounded-2xl:focus-within {
+    transform: translateY(-3px);
+    box-shadow:
+      0 14px 32px rgb(15 23 42 / 9%),
+      0 0 0 1px rgb(13 148 136 / 12%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  main .scroll-reveal,
+  main .scroll-reveal.is-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  main .rounded-3xl,
+  main .rounded-2xl {
+    transition: none;
+  }
+}
